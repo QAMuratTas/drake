@@ -12,9 +12,12 @@ public class Runner {
         System.out.println("Maaş Artışı: " + employee.raiseSalary() + "₺");
 
         System.out.println("Toplam Odenecek Ucret: " + ((employee.salary) + (employee.raiseSalary())));
-
         System.out.println(employee.toString());
 
-
+        Employee e1=new Employee("Murat",30000,45,2016);
+        System.out.println("e1.toString() = " + e1.toString());
+        System.out.println("Bonus= " + e1.bonus());
+        System.out.println("e1.raiseSalary() = " + e1.raiseSalary());
+        System.out.println("e1.tax() = " + e1.tax());
     }
 }
