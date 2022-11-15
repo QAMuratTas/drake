@@ -57,7 +57,9 @@ hicbiri
 
         for (int i = 0; i <length ; i++) {
             int random = (int) (Math.random()*passWordSet.length());
-          passWord[i] = passWordSet.charAt(random);
+           // System.out.println("(int) (Math.random()*passWordSet.length()) = " + (int) (Math.random() * 5));
+
+            passWord[i] = passWordSet.charAt(random);
         }
          return new String(passWord);
     }
